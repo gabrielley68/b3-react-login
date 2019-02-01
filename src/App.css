@@ -1,0 +1,25 @@
+.App {
+  text-align: center;
+}
+
+.shake {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: 2;
+}
+
+@keyframes shake {
+  0% { transform: translate(21px, 21px) rotate(10deg); }
+  10% { transform: translate(-21px, -21px) rotate(-10deg); }
+  20% { transform: translate(-23px, 20px) rotate(10deg); }
+  30% { transform: translate(23px, 22px) rotate(10deg); }
+  40% { transform: translate(21px, -21px) rotate(10deg); }
+  50% { transform: translate(-21px, 22px) rotate(-10deg); }
+  60% { transform: translate(-23px, 21px) rotate(10deg); }
+  70% { transform: translate(23px, 21px) rotate(-10deg); }
+  80% { transform: translate(-21px, -21px) rotate(10deg); }
+  90% { transform: translate(21px, 22px) rotate(10deg); }
+  100% { transform: translate(21px, -22px) rotate(-10deg); }
+}
